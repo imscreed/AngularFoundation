@@ -1,0 +1,20 @@
+<!--<p>-->
+  <!--Content from Databinding component with CSS from Databinding Component!<br>-->
+  <!--This is called by the Parent App Component.-->
+
+  <!--If a style is not mentioned, then it will be inherited from the parent component.<br><br>-->
+  <!--ITS OWN STYLE SHEET IS THE MAIN PRIORITY!-->
+<!--</p>-->
+<ng-content></ng-content>
+
+<h1>
+  The value of numberInterpolation is {{numberInterpolation}}
+</h1>
+<input type="text" value={{somestring}}>
+<p [ngClass]="{customCSSClass: true}">This is a paragraph</p>
+<p [ngClass]="{customCSSClass: isEnabled()}">This is a paragraph</p>
+<p [ngStyle]="{size:'18px'}">This is another paragraph</p>
+
+<db-custombinding [a]="2+2*5+10"></db-custombinding>
+<db-eventbinding (emitEvent)="displayEvent($event)"></db-eventbinding>
+<db-twowaybinding></db-twowaybinding>

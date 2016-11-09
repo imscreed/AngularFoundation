@@ -1,0 +1,15 @@
+<h1>
+  {{title}}
+</h1>
+<p>
+  <!--<app-databinding>Custom content via ng-content through Parent Component</app-databinding>-->
+
+  <app-databinding>
+    <h1>This is another ng-content passed to Databinding through the Parent</h1>
+    <p>Here the H1 and P tags are mentioned inside the aprent component, hence they will inherit Parent's style</p>
+  </app-databinding>
+</p>
+<app-lifecycle *ngIf="!deleteComponent"></app-lifecycle>
+<button (click)="deleteComponent = true">Click to destroy component</button>
+
+

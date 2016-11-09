@@ -1,0 +1,12 @@
+p{
+    font-family: "Helvetica Neue";
+    font-weight: 100;
+    font-size: 15px;
+}
+h1{
+    color:black;
+    font-family: "Helvetica Neue";
+}
+.customCSSClass{
+    color: aqua;
+}
